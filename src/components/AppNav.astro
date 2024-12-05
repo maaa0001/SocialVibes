@@ -1,22 +1,22 @@
 <div class="icon-container">
   <div class="icon">
-    <img src="/src/assets/bullseye.svg" alt="Daily" />
+    <img src="src/assets/bullseye.svg" alt="Daily" />
     <p>Daily</p>
   </div>
   <div class="icon">
-    <img src="/src/assets/compas.svg" alt="Venture" />
+    <img src="src/assets/compas.svg" alt="Venture" />
     <p>Venture</p>
   </div>
   <div class="icon">
-    <img src="/src/assets/home.svg" alt="Home" />
+    <img src="src/assets/home.svg" alt="Home" />
     <p>Home</p>
   </div>
   <div class="icon">
-    <img src="/src/assets/message.svg" alt="Social" />
+    <img src="src/assets/message.svg" alt="Social" />
     <p>Social</p>
   </div>
   <div class="icon active">
-    <img src="/src/assets/profile.svg" alt="Profile" />
+    <img src="src/assets/profile.svg" alt="Profile" />
     <p class="active-text">Profile</p>
   </div>
 </div>
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 680px; /* Max width constraint */
+    max-width: 680px;
     width: 100%;
     padding: 20px 0;
     background-color: #ffffff;
@@ -37,14 +37,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #333; /* Default text color */
+    color: #333;
   }
 
   .icon img {
     width: 50px;
     height: 50px;
     margin-bottom: 8px;
-    opacity: 0.6; /* Default opacity for inactive icons */
+    opacity: 0.6;
   }
 
   .icon p {
@@ -54,22 +54,10 @@
   }
 
   .icon.active img {
-    opacity: 1; /* Full opacity for active icon */
+    opacity: 1;
   }
 
   .icon .active-text {
-    color: #3f98a7; /* Highlighted text color for active icon */
-  }
-
-  /* Media Query for smaller screens */
-  @media (max-width: 500px) {
-    .icon img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .icon p {
-      font-size: 14px;
-    }
+    color: #3f98a7;
   }
 </style>
