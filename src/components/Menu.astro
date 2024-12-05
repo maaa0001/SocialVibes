@@ -1,0 +1,101 @@
+---
+
+---
+
+<div class="header">
+  <div class="left-icons">
+    <div class="icon-container">
+      <div class="icon bell">
+        <img src="/src/assets/bell-icon.svg" alt="Notifications" />
+        <div class="badge"></div>
+      </div>
+      <div class="icon message">
+        <img src="/src/assets/message-icon.svg" alt="Messages" />
+        <div class="badge"></div>
+      </div>
+    </div>
+  </div>
+  <div class="right-icons">
+    <div class="score">
+      <div class="circle"></div>
+      <span>400</span>
+    </div>
+    <div class="menu">
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .icon {
+    position: relative;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f7a800;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #3f98a7;
+    font-weight: bold;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #3f98a7;
+    border-radius: 50%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .menu-bar {
+    width: 30px;
+    height: 4px;
+    background-color: #3f98a7;
+    border-radius: 2px;
+  }
+</style>

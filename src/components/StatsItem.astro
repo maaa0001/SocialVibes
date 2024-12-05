@@ -1,0 +1,51 @@
+---
+const { img } = Astro.props;
+const { number } = Astro.props;
+const { label } = Astro.props;
+---
+
+<div class="stat-item">
+  <img src={img} alt="Friends" />
+  <div class="stat-content">
+    <p class="number">{number}</p>
+    <p class="label">{label}</p>
+  </div>
+</div>
+
+<style>
+  .stat-item {
+    background-color: #e6f6f8;
+    border-radius: 12px;
+    padding: 10px 60px 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .stat-item img {
+    width: 50px;
+    height: 100%;
+    margin-right: 12px;
+  }
+
+  .stat-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+
+  .label {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+</style>

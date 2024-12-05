@@ -1,0 +1,92 @@
+---
+
+---
+
+<div class="card">
+  <div class="background-image">
+    <img src="https://picsum.photos/200" alt="Background Image" />
+  </div>
+  <div class="profile-content">
+    <div class="profile-pic">
+      <img src="https://picsum.photos/200" alt="Profile Picture" />
+    </div>
+    <div class="info">
+      <h2>@mclovin</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.
+      </p>
+    </div>
+    <div class="icon">
+      <img src="/src/assets/flame-fill-svgrepo-com.svg" alt="Flame Icon" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .background-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .profile-content {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .info {
+    margin-top: 40px;
+  }
+
+  .info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .info p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .icon {
+    margin-top: 40px;
+  }
+
+  .icon img {
+    width: 50px;
+    height: auto;
+  }
+</style>

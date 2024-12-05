@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Menu from "../components/Menu.astro";
+import ProfileBanner from "../components/ProfileBanner.astro";
+import ProfileNav from "../components/ProfileNav.astro";
+import Album from "../components/Album.astro";
+import AppNav from "../components/AppNav.astro";
+import Dashboard from "../components/Dashboard.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <Menu />
+  <ProfileBanner />
+  <ProfileNav />
+  <Dashboard />
+  <Album header="Malmö Game Week" />
+  <Album header="KEA Connection" />
+  <Album header="BFF's" />
+  <AppNav />
 </Layout>
